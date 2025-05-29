@@ -1,0 +1,28 @@
+#Products_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 25px;
+}
+.product > img{
+    width: 100%;
+    height: 250px;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    border: 2px solid lightgrey;
+    height: 420px;
+    text-align: center;
+     transition: transform 0.3s ease;
+}
+.product:hover{
+    transform: scale(1.05); /* Slight zoom in */
+  box-shadow: 0 4px 20px rgba(99, 95, 95, 0.1);
+  cursor: pointer;
+}
